@@ -3,12 +3,16 @@
   margin: 0;
   padding:0;
 }
-
+#prova {
+  background-color: brown;
+  text-align: center;
+  color: #fff;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
 main {
-  height: 100vh;
+  height: calc(100% - 80px);
   width: 100%;
 }
 footer {
@@ -28,9 +32,13 @@ h2 {
 }
 /*struttura*/
 .main-wrapper {
-  background-color: #000;
+  background-color: #141922;
   height: 100%;
   overflow-y: auto;
+}
+
+.footer-wrapper {
+  width: 100%;
 }
 
 .row {
@@ -53,8 +61,7 @@ h2 {
   flex-direction: column;
   flex-basis: 100%;
   flex: 5;
-  overflow-y: auto;
-  height: 100%;
+  height: 100vh;
 }
 
 .side-column {
@@ -64,7 +71,7 @@ h2 {
 
 .main-column {
   width: 100%;
-  height: 100%;
+  height: calc(100% - 80px);
   background-color: #282828;
   overflow-y: auto;
 }
@@ -335,4 +342,39 @@ h2 {
 /*terza riga album*/
 .round {
   border-radius: 50%;
+}
+ /*footer*/
+ .play-album {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   width: 30%;
+ }
+
+.footer-sx li {
+  list-style: none;
+  display: inline;
+  align-items: center;
+}
+.img-player {
+  padding-right: 10px;
+  padding: 20px;
+  width: 28%;
+  align-items: center;
+ }
+
+h6 {
+  font-size: 9px;
+  font-weight: 500;
+ }
+
+.sotto-footer {
+  font-weight: 300;
+  font-size: 8px;
+  color: #b3b3b3;
+ }
+.fa-heart, .fa-folder {
+  color: #b3b3b3;
+  width: 5%;
 }
